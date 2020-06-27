@@ -1,0 +1,14 @@
+<div class="col-xs-8 col-xs-offset-2">
+    <form (ngSubmit)="onSignIn(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="email">Mail</label>
+            <input type="email" id="email" name="email" class="form-control block" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control block" ngModel>
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Sign In</button>
+    </form>
+    </div>
+    

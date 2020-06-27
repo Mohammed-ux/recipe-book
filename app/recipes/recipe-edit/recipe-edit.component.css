@@ -1,0 +1,6 @@
+.space{
+    margin-right: 8px;
+}
+.ng-invalid.ng-touched{
+    border-color: red;
+}
